@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Survey Form</h1><br><br>
+        <form id="surveyForm">
+            1. Name: <input type="text" name="name" required><br>
+            2. Email: <input type="email" name="email" required><br>
+            3. Roll No.: <input type="text" name="roll" required><br>
+            4. Address: <input type="text" name="address" required><br>
+            <span class="genders">
+            5. Gender:
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female<br><br>
+            </span>
+            6. Degree:
+            <select name="degree" placeholder="Degree">
+                <option value="BSC">BSC</option>
+                <option value="BBA">BBA</option>
+                <option value="BCOM">BCOM</option>
+                <option value="BA">BA</option>
+                <option value="BCA">BCA</option>
+            </select><br>
+            Mention if other: <input type="text" name="otherDegree"><br>
+            7. Year: 
+            <select name="year" placeholder="Yeat" required>
+                <option value="1">First</option>
+                <option value="2">Second</option>
+                <option value="3">Third</option>
+            </select>
+            8. Semester:             
+            <select name="sem" placeholder="Semester" required>
+                <option value="I">I</option>
+                <option value="II">II</option>
+                <option value="III">III</option>
+                <option value="IV">IV</option>
+                <option value="I">V</option>    
+                <option value="VI">VI</option>    
+            </select><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
